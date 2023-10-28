@@ -1,4 +1,4 @@
-let color = 'black';
+let color = '#4D4D4D';
 
 
 const board = document.getElementById('board');
@@ -14,8 +14,8 @@ const colorPicker = document.getElementById('colorPicker')
 slider.onmousemove = (e) => updateSize(e.target.value)
 colorPicker.oninput = (e) => changeColor(e.target.value)
 colorBtn.onclick= () => changeColor(colorPicker.value)
-blackBtn.onclick = () => changeColor('black')
-eraserBtn.onclick = () => changeColor('white')
+blackBtn.onclick = () => changeColor('#4D4D4D')
+eraserBtn.onclick = () => changeColor('#DBDBDB')
 randomBtn.onclick = () => changeColor('random')
 clearBtn.onclick = () => clearBoard()
 
@@ -38,7 +38,7 @@ function makeBoard(size){
         let box = document.createElement('div');
         box.addEventListener('mouseover', colorBox)
         box.addEventListener('mousedown', colorBox)
-        box.style.backgroundColor = "white";
+        box.style.backgroundColor = "#DBDBDB";
         board.insertAdjacentElement('beforeend', box);
 }
 }
@@ -67,7 +67,7 @@ function changeColor(choice){
 
 function clearBoard(){
     let box = board.querySelectorAll('div');
-    box.forEach((div) => div.style.backgroundColor = 'white')
+    box.forEach((div) => div.style.backgroundColor = '#DBDBDB')
 }
 
 
