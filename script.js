@@ -53,6 +53,7 @@ function colorBox(e){
 }
 
 function changeSize(input){
+    updateSize(input)
     makeBoard(input)
 }
 

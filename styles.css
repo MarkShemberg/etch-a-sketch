@@ -142,11 +142,6 @@ input[type=color]::-webkit-color-swatch-wrapper {
       padding: 0;
 }
 
-.gridsize {
-    margin-bottom: 0px;
-    padding: 10px;
-}
-
 .footer {
     position: absolute;
     bottom: 0;
