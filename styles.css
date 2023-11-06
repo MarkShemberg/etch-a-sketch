@@ -190,10 +190,10 @@ input[type=color]::-webkit-color-swatch-wrapper {
 
 @media (max-width: 850px) {
     .title {
-        font-size: 40px;
+        font-size: 35px;
     }
     .container {
-        width: 400px;
+        width: 350px;
     }
     
     .board {
